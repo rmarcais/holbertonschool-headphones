@@ -12,7 +12,7 @@ I won’t have a lot of instruction, I am free to implement it the way that I wa
 
 ## Expected result
 
-![expected_result](./expected_result.jpg)
+![expected_result](./images/expected_result.jpg)
 
 *Designed by [Nicolas Philippot](https://www.linkedin.com/in/nic0fil/), UX/UI designer.*
 
