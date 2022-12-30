@@ -25,8 +25,10 @@
     --font-family-title: 'Source Sans Pro', sans-serif;
 
     --font-size-small: 1.4rem;
+    --font-size-small-our-results: 1.5rem;
     --font-size-medium: 1.6rem;
     --font-size-large: 1.8rem;
+    --font-size-x-large: 4.4rem;
 
     --font-weight-regular: 400;
     --font-weight-bold: 900;
@@ -139,6 +141,11 @@
 
     .col-1-4 {
       padding: 5rem 2rem 1rem;
+      width: 26rem;
+    }
+
+    .section-ourresults .col-1-4 {
+      padding: 5rem 0 1rem;
       width: 26rem;
     }
 
@@ -369,3 +376,48 @@
     .whatwedo-item p {
       font-size: var(--font-size-small);
     }
+
+    /* Section Our results
+      ============================= */
+
+    .section-ourresults {
+      background-image: url(./images/headphones_hero_2.jpg);
+        background-repeat: no-repeat;
+        background-position: 40% 10%;
+        background-size: cover;
+    }
+
+    .section-ourresults .section-header {
+      padding-top: 3rem;
+    }
+
+    .ourresults-item {
+      position: relative;
+    }
+
+    .ourresults-item .pentagone {
+      width: 190px;
+      height: 190px;
+    }
+
+    .ourresults-item p {
+      position: absolute;
+    }
+
+    .ourresults-item p {
+      left: 50%;
+      transform: translate(-50%, -50%); 
+    }
+
+    .ourresults-item .pentagone + p {
+      font-weight: var(--font-weight-bold);
+      top: 25%;
+      font-size: var(--font-size-x-large);
+    }
+
+    .ourresults-item p:nth-child(3) {
+      top: 65%;
+      font-size: var(--font-size-small-our-results);
+      width: 15rem;
+    }
+
