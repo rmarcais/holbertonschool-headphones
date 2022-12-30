@@ -43,7 +43,7 @@
     --header-padding: 3rem 0 0;
 
     --section-padding: 7rem 0 6rem;
-    --section-header-padding: 0 1.9rem;
+    --section-header-padding: 0 2.9rem;
 
     --button-display: inline-block;
     --button-padding: 1.5rem 3rem;
@@ -139,7 +139,7 @@
 
     .row li {
       padding: 5rem 2rem 1rem;
-      width: 28rem;
+      width: 26rem;
     }
 
     @media only screen and (max-width: 768px) {
@@ -312,7 +312,7 @@
     }
 
     .section-inner {
-      max-width: 68rem;
+      max-width: 65rem;
       margin: auto;
       display: flex;
       flex-direction: column;
@@ -322,6 +322,10 @@
 
   .section-header {
     padding: var(--section-header-padding);
+  }
+
+  .section-header p {
+    margin-top: 4rem;
   }
 
     /* Section HERO
@@ -351,7 +355,7 @@
 
     @media only screen and (max-width: 480px) {
         .section-hero .section-body {
-            padding: 35rem 1rem 10rem 1rem;
+            padding: 35rem 2rem 10rem 2rem;
         }
     }
 
