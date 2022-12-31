@@ -544,6 +544,10 @@
         font-size: var(--font-size-large);
       }
 
+      .social-link:hover span, .social-link:active span {
+        color: var(--color-primary)
+      }
+
       .footer p {
         opacity: 35.17%;
         font-size: var(--font-size-x-small);

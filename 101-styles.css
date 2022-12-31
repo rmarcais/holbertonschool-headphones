@@ -453,8 +453,19 @@
       color: var(--color-black);
     }
     
+    .whatwedo-item {
+      padding-bottom: 1rem;
+    }
+    
     .whatwedo-item p {
       font-size: var(--font-size-small);
+    }
+
+    .whatwedo-item:hover {
+      transform: scale(1.2) rotate(3deg);
+      transition: 0.2s ease-out;
+      border-radius: 2rem;
+      box-shadow: 0 0 2rem var(--color-black);
     }
 
     /* Section Our results
@@ -473,6 +484,9 @@
 
     .ourresults-item {
       position: relative;
+      -ms-perspective-origin-x: 50px;
+      -ms-perspective-origin-y: 50px;
+      perspective: 400px;
     }
 
     .ourresults-item .pentagone {
@@ -498,6 +512,11 @@
       top: 65%;
       font-size: var(--font-size-small-our-results);
       width: 15rem;
+    }
+
+    .ourresults-item:hover {
+      transform: scale(1.2) rotate3d(0, 45, 0, 360deg);
+      transition: 1s ease-out;
     }
 
     /* Section Contact us
