@@ -54,16 +54,6 @@
    $input-margin: 0;
    $footer-padding: 8rem 0 2.5rem;
 
-@media only screen and (max-width: 768px) {
-    $header-padding: 2rem 0 0;
-}
-
-@media only screen and (max-width: 480px) {
-      $nav-item-margin: 0;
-      $button-margin: $button-margin-small;
-      $footer-padding: 4rem 0 2.5rem;
-}
-
    /* Base
    ============================= */
 
@@ -117,6 +107,9 @@
 
     &:hover, &:active {
         opacity: 0.9;
+    }
+    @media only screen and (max-width: 480px) {
+        margin: $button-margin-small;
     }
 }
 
@@ -253,15 +246,19 @@ form {
                     margin: $nav-item-margin;
                 }
                 @media only screen and (max-width: 480px) {
-                  &, & + .nav-item {
+                  & + .nav-item {
                         margin: 0;
-                      margin-bottom: 3rem;
+                        margin-bottom: 3rem;
                   }
           
                   &:first-child {
                       margin-top: 1rem;
+                      margin-bottom: 3rem;
                   }
               }
+              @media only screen and (max-width: 480px) {
+                    margin: 0;
+                }
             }
             @media only screen and (max-width: 480px) {
                   flex-direction: column;
@@ -279,6 +276,10 @@ form {
         padding: $header-padding;
         position: relative;
         z-index: 3;
+
+        @media only screen and (max-width: 768px) {
+            padding: 2rem 0 0;
+        }
 
         .header-logo {
             @media only screen and (max-width: 480px) {
@@ -541,5 +542,8 @@ form {
         p {
             opacity: 35.17%;
             font-size: $font-size-x-small;
+        }
+        @media only screen and (max-width: 480px) {
+            padding: 4rem 0 2.5rem;
         }
       }

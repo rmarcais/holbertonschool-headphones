@@ -177,6 +177,9 @@ a {
   margin: 5rem 0; }
   .btn:hover, .btn:active {
     opacity: 0.9; }
+  @media only screen and (max-width: 480px) {
+    .btn {
+      margin: 1.5rem 0 5rem; } }
 
 form {
   max-width: 335px;
@@ -284,11 +287,15 @@ ul.row {
     .navbar .nav .nav-item + .nav-item {
       margin: 0 0 0 3rem; }
     @media only screen and (max-width: 480px) {
-      .navbar .nav .nav-item, .navbar .nav .nav-item + .nav-item {
+      .navbar .nav .nav-item + .nav-item {
         margin: 0;
         margin-bottom: 3rem; }
       .navbar .nav .nav-item:first-child {
-        margin-top: 1rem; } }
+        margin-top: 1rem;
+        margin-bottom: 3rem; } }
+    @media only screen and (max-width: 480px) {
+      .navbar .nav .nav-item {
+        margin: 0; } }
   @media only screen and (max-width: 480px) {
     .navbar .nav {
       flex-direction: column;
@@ -302,6 +309,9 @@ ul.row {
   padding: 3rem 0 0;
   position: relative;
   z-index: 3; }
+  @media only screen and (max-width: 768px) {
+    .header {
+      padding: 2rem 0 0; } }
   @media only screen and (max-width: 480px) {
     .header .header-logo {
       flex-basis: 70%;
@@ -477,5 +487,8 @@ ul.row {
   .footer p {
     opacity: 35.17%;
     font-size: 1.2rem; }
+  @media only screen and (max-width: 480px) {
+    .footer {
+      padding: 4rem 0 2.5rem; } }
 
 /*# sourceMappingURL=102-styles.css.map */
